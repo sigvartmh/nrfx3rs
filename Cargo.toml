@@ -1,0 +1,32 @@
+[package]
+name = "nrfx3rs-bootloader"
+version = "0.1.0"
+authors = ["sigvartmh <sigvart.m@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mem_cmp = "*"
+cty = "*"
+cortex-m = "*"
+cortex-m-rt = "*"
+# cortex-m-semihosting= "*"
+panic-halt = "*"
+# panic-itm = "*"
+# panic-semihosting = "*"
+nrf52840-hal = "*"
+embedded-hal = "*"
+
+[build-dependencies]
+bindgen = "0.53"
+
+[[bin]]
+name = "nrfx3rs-bootloader"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations

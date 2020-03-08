@@ -1,0 +1,8 @@
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/ssi_pal_types.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/ssi_pal_types_plat.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/crys_error.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/nrf_cc310_bl_ecdsa_verify_common.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/nrf_cc310_bl_ecdsa_verify_secp256r1.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/nrf_cc310_bl_hash_common.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/nrf_cc310_bl_hash_sha256.h"
+#include "../nrfxlib/crypto/nrf_cc310_bl/include/nrf_cc310_bl_init.h"

@@ -1,0 +1,3 @@
+[submodule "nrfxlib"]
+	path = nrfxlib
+	url = https://github.com/NordicPlayground/nrfxlib
